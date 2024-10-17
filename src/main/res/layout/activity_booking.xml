@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="101dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashboard" />
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="385dp"
+        android:layout_height="311dp"
+        android:theme="@style/CustomDatePickerDialogTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/garamond"
+        android:text="Booking"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="85dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/logocircle" />
+
+    <TextView
+        android:id="@+id/people_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="1"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/people_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/people_seekbar" />
+
+    <SeekBar
+        android:id="@+id/people_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="48dp"
+        android:min="1"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="#D6B7A7"
+        android:thumbTint="#D6B7A7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/people_image"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <ImageView
+        android:id="@+id/people_image"
+        android:layout_width="43dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2"
+        app:srcCompat="@drawable/oneppl" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#D6B7A7"
+        android:text="Done"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="#D6B7A7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/people_seekbar"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sun"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="87dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/sun"
+        app:layout_constraintEnd_toStartOf="@+id/people_image"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

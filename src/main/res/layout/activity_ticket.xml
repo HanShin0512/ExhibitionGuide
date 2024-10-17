@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ticket">
+
+    <ImageView
+        android:id="@+id/Ticket1"
+        android:layout_width="414dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/artticket1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket_img" />
+
+    <ImageView
+        android:id="@+id/Ticket2"
+        android:layout_width="415dp"
+        android:layout_height="209dp"
+        android:src="@drawable/artticket2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Ticket_img"
+        android:layout_width="414dp"
+        android:layout_height="138dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/logocircle"
+        app:layout_constraintBottom_toBottomOf="@+id/Ticket_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/garamond"
+        android:text="Ticket"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Ticket_img"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/Ticket2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket1"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Ticket2"
+        app:layout_constraintEnd_toEndOf="@+id/ppl_amount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket1"
+        app:layout_constraintVertical_bias="0.651" />
+
+    <TextView
+        android:id="@+id/ppl_amount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:rotation="90"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket1" />
+
+    <TextView
+        android:id="@+id/ppl_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:rotation="90"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Ticket1" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Ticket1"
+        app:layout_constraintEnd_toEndOf="@+id/ppl_amount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Ticket1"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:backgroundTint="#D6B7A7"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ticket2"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D6B7A7"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toEndOf="@+id/edit"
+        app:layout_constraintTop_toTopOf="@+id/edit"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
